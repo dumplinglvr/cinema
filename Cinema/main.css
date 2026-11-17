@@ -22,7 +22,7 @@ nav ul {
     font-size:1em;
     }
 
-nav a:link, .footer-links a:link{
+nav a:link, .footer-links a:link, nav a:visited, .footer-links a:visited {
     color:white;
     text-decoration:none;
     }
@@ -35,7 +35,7 @@ nav a:active, .footer-links a:active {
     color:#B94753;
     }
 
-nav li{margin-bottom:5px; margin-left:15px;
+nav li{margin-bottom:5px; text-align:center;
     }
     
 .yellowbox {
