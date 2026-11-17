@@ -64,7 +64,7 @@ footer {font-family: Arial; padding:15px 20px; background-image: url("Images/Log
     background-repeat:no-repeat;
     background-position: 30px 75px; background-size: 350px auto; 
     display: grid;
-    grid-template-columns: 440px 2fr 3.5fr;
+    grid-template-columns: 440px 2fr 2.8fr;
     gap: 30px;
     align-items: start;
     box-sizing: border-box;
@@ -72,7 +72,7 @@ footer {font-family: Arial; padding:15px 20px; background-image: url("Images/Log
 
 .footer-links {grid-column:2; display:grid; grid-template-columns: repeat(2, max-content);
     grid-template-rows: repeat(3,auto); grid-auto-flow:column; 
-    gap: 20px 60px; margin-left:-10px; margin-top:65px;
+    gap: 20px 60px; margin-left:10px; margin-top:65px;
     }
 
 .footer-links ul{
@@ -84,14 +84,14 @@ footer {font-family: Arial; padding:15px 20px; background-image: url("Images/Log
     }
 
 .footer-location h4{
-    color:#E6B66C; 
+    color:#E6B66C; text-align:center;
 }
 
 .location-list{
     display:flex; gap:30px;
 }
 
-.location h4{color:white; margin:0; flex:1; min-width:0;}
+.location h4{color:white; margin:0; flex:1; min-width:0; text-align:left;}
 
 .location p{color:#B7B1BD; line-height:1.5; margin:5px 0 15px; font-size:0.9em;}
 
