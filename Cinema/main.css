@@ -22,22 +22,21 @@ nav ul {
     font-size:1em;
     }
 
-nav a:link, footer div a:link{
+nav a:link, .footer-links a:link{
     color:white;
     text-decoration:none;
     }
 
-nav a:hover, footer div a:hover {
+nav a:hover, .footer-links a:hover {
     color:#E6B66C;
     }
 
-nav a:active, footer div a:active {
+nav a:active, .footer-links a:active {
     color:#B94753;
     }
 
 nav li{margin-bottom:5px; margin-left:15px;
     }
-        
     
 .yellowbox {
         display:inline-flex; background-color:#E6B66C; align-items:center; text-align:center; padding:15px 25px; gap:8px;
@@ -61,17 +60,46 @@ nav li{margin-bottom:5px; margin-left:15px;
         color:#B94753; background-image: url("Images/Logo and Icon/signup_hover.png");
     }
 
-footer {font-family: Arial; padding:15px;background-image: url("Images/Logo and Icon/dark_logo.svg"); 
+footer {font-family: Arial; padding:15px 20px; background-image: url("Images/Logo and Icon/dark_logo.svg"); 
     background-repeat:no-repeat;
-    background-position: 30px 10px; background-size: 350px auto; padding-left:500px;
+    background-position: 30px 75px; background-size: 350px auto; 
+    display: grid;
+    grid-template-columns: 440px 2fr 3.5fr;
+    gap: 30px;
+    align-items: start;
+    box-sizing: border-box;
 }
 
-footer div {display:grid; grid-template-columns: repeat(2, max-content);
+.footer-links {grid-column:2; display:grid; grid-template-columns: repeat(2, max-content);
     grid-template-rows: repeat(3,auto); grid-auto-flow:column; 
-    gap: 20px 60px; 
+    gap: 20px 60px; margin-left:-10px; margin-top:65px;
     }
 
-footer div ul{
+.footer-links ul{
     list-style:none;
     }
         
+.footer-location {
+    grid-column: 3; margin-top:-22px;
+    }
+
+.footer-location h4{
+    color:#E6B66C; 
+}
+
+.location-list{
+    display:flex; gap:30px;
+}
+
+.location h4{color:white; margin:0; flex:1; min-width:0;}
+
+.location p{color:#B7B1BD; line-height:1.5; margin:5px 0 15px; font-size:0.9em;}
+
+.location a{color:#E6B66C; text-decoration:none; font-size:0.9em;}
+
+.location a:hover{color:#B94753;}
+
+.copyright{
+    grid-column: 1 / -1; text-align:center; color:#B7B1BD; 
+     font-size:0.8em; border-top:1px solid rgba(253, 252, 252, 0.252); padding-top:20px; margin:0 -20px;
+}
