@@ -1,3 +1,25 @@
+.box {
+        float:right; margin-top:20px; margin-right:2.5em; width:650px; height:400px;
+        border-radius:15px; padding:1em; background-color:#1E3A5F;
+}
+p.yellow { 
+        font-family:Arial; color:#E6B66C; padding-top:60px;
+}
+p.tagline {
+        color:white; font-size:4em; margin-top:0; margin-bottom:0;
+}
+p.grey {
+        font-family:Arial; color:#B7B1BD;line-height:1.5; font-size:1.2em; margin-bottom:2em;
+}
+.button a {
+        color:black;text-decoration:none; font-size:1em; font-family: Arial; 
+}
+.transparent-box { 
+        display:inline-flex; justify-content:center; text-align:center; padding:15px 20px;
+        border:2px solid #E6B66C; border-radius:15px; margin-left:20px; width:7.5em; height:1em;
+}
+.transparent-box a {
+        color:white;text-decoration:none; font-size:1em; font-family: Arial; 
 .box{
         background-color:#1E3A5F;
         margin-top:20px;  
