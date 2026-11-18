@@ -1,3 +1,14 @@
+html {scroll-behavior: smooth;}
+
+.tabs {
+    position:sticky;
+    top: 0;
+    z-index: 10;
+    background-color: #101018;
+    padding-top: 10px;
+    margin-bottom: 0;
+}
+
 /* basic settings */
 main { font-family: Arial, sans-serif; background-color: #101018; color: #ffffff;
   margin-top: 30px; padding: 0 20px; display: grid; grid-template-columns: 1fr; gap: 30px;
@@ -26,7 +37,6 @@ main h1 {
 }
 
 /* sort buttons */
-.tabs {margin-bottom: 20px;}
 
 .tab {
     display: inline-block; color:#ffffff; border: 1px solid #5a5a66; border-radius: 30px; padding: 8px 22px;
@@ -75,7 +85,7 @@ main h1 {
 }
 
 .item p {
-    font-size: 16px;
+    font-size: 12px;
     color: #9e9489;
     text-align: center;
     margin-bottom: 15px;
@@ -111,6 +121,27 @@ main h1 {
     background-size: 85%;
     background-position: center;
     background-repeat: no-repeat;
+}
+
+/* option box */
+.category { scroll-margin-top: 70px;}
+
+.option {
+    display:block;
+    font-size: 14px;
+    color: #ffffff;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.option select {
+    margin-left: 8px;
+    background-color: #101018;
+    color: #ffffff;
+    border: 1px solid #5a5a66;
+    border-radius: 8px;
+    padding: 6px 10px;
+    font-size: 14px;
 }
 
 /* yellow box */
@@ -161,15 +192,70 @@ main .yellowbox:hover {
     justify-content: center;
 }
 
-/* in computer version */
-@media (min-width: 1024px) {
-    main {
-        padding: 0 60px;
-        grid-template-columns: 2fr 1fr;
+/* mobile version first */
+@media (max-width: 768px) {
+    .food-items {
+        grid-template-columns: 1fr;
+        gap: 10px;
     }
+    .item {
+        padding: 12px;
+    }
+    .photo {
+        width: 90px;
+        height: 90px;
+    }
+    .item h3 {
+        font-size: 14px;
+    }
+    .description {
+        font-size: 12px;
+    }
+    .item-bottom {
+        flex-direction: column;
+        align-items: center;
+    }
+    .price {
+        font-size: 16px;
+        margin-bottom: 8px;
+    }
+    .item .yellowbox {
+        padding: 8px 10px;
+        font-size: 13px;
+    }
+}
 
-    .items {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
+/* Tablet version 2 per row */
+@media (min-width: 768px) {
+    .food-items {
+        grid-template-columns: 1fr 1fr;
     }
+}
+
+/* Computer version 3 per row */
+@media (min-width: 1024px) {
+    main {padding: 0 60px; grid-template-columns: 2fr 1fr;}
+
+    .food-items {
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 15px;
+    }
+    .item {padding: 15px;}
+
+    .item h3 {
+        font-size: 15px;
+    }
+    .description {
+        font-size: 13px;
+    }
+    .item-bottom {
+        flex-direction: column;
+        align-items: center;
+    }
+    .price {font-size: 17px;}
+
+    .item .yellowbox {
+        padding: 8px 12px;
+        font-size: 13px;
+    }  
 }
