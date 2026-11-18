@@ -6,6 +6,7 @@
     <title>Lumière Cinema</title>
     <link rel="stylesheet" href="../css/main.css">
     <link rel="stylesheet" href="../css/food.css">
+    <script src="..//JavaScript/main.js" defer></script>
 </head>
 <body>
     <header>
@@ -19,13 +20,41 @@
                 <li><a href="cart.html">CART</a></li>
                 <li><a href="team.html">OUR TEAM</a></li>
             </ul>
+        <button id="menu-toggle" type="button" 
+                aria-label="Toggle menu"
+                aria-controls="sidebar"
+                aria-expanded="false">
+            <span class="hamburger"></span>
+        </button>
 
-            <div class="yellowbox signup">
-                <a href="contact.html">SIGN UP</a>
-            </div> 
-
-        </nav>
+        <a href="contact.html" class="signupbox signup">
+            SIGN UP
+        </a>
     </header>
+
+    <!--menu navigation-->
+    <nav class="sidebar" id="sidebar">
+        <ul>
+            <li><a href="home.html">HOME</a></li>
+            <li><a href="movies.html">MOVIES</a></li>
+            <li><a href="halls.html">OUR HALLS</a></li> 
+            <li><a href="food.html">FOOD & DRINKS</a></li>
+            <li><a href="cart.html">CART</a></li>
+            <li><a href="team.html">OUR TEAM</a></li>
+        </ul> 
+    </nav>
+    
+    <!--navigation bar-->
+     <nav class="navbar">
+        <ul>
+            <li><a href="home.html">HOME</a></li>
+            <li><a href="movies.html">MOVIES</a></li>
+            <li><a href="halls.html">OUR HALLS</a></li> 
+            <li><a href="food.html">FOOD & DRINKS</a></li>
+        </ul> 
+    </nav>
+
+     <hr>
 
     <main>
         <section>
