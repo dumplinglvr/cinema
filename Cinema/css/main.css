@@ -5,7 +5,7 @@ body{
 nav{
     height:70px; display:flex; justify-content:center; align-items:center;
     border-bottom:0.5px solid rgba(253, 252, 252, 0.252);
-    background-image: url("Images/Logo and Icon/dark_logo.svg"); 
+    background-image: url("../Images/Logo and Icon/dark_logo.svg"); 
     background-repeat:no-repeat;
     background-position: left -5px; background-size: 250px auto; padding-left:500px;
     font-family: Arial; 
@@ -48,7 +48,7 @@ nav li{margin-bottom:5px; text-align:center;
     }
 
 .signup a {
-        background-image: url("Images/Logo and Icon/signup_icon.png");  
+        background-image: url("../Images/Logo and Icon/signup_icon.png");  
         background-repeat:no-repeat; background-position: left 0.5px; background-size: 20px auto; padding-left:30px;padding-top:2px;
     }
 
@@ -57,10 +57,10 @@ nav li{margin-bottom:5px; text-align:center;
     }   
     
 .signup a:hover {
-        color:#B94753; background-image: url("Images/Logo and Icon/signup_hover.png");
+        color:#B94753; background-image: url("../Images/Logo and Icon/signup_hover.png");
     }
 
-footer {font-family: Arial; padding:15px 20px; background-image: url("Images/Logo and Icon/dark_logo.svg"); 
+footer {font-family: Arial; padding:15px 20px; background-image: url("../Images/Logo and Icon/dark_logo.svg"); 
     background-repeat:no-repeat;
     background-position: 30px 75px; background-size: 350px auto; 
     display: grid;
