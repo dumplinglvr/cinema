@@ -6,44 +6,65 @@
     <title>Lumière Cinema</title>
     <link rel="stylesheet" href="../css/main.css">
     <link rel="stylesheet" href="../css/home.css">
+    <script src="..//JavaScript/main.js" defer></script>
 </head>
 <body>
     <header>
-        <nav>
-            <ul>
-                <li><a href="home.html">HOME</a></li>
-                <li><a href="movies.html">MOVIES</a></li>
-                <li><a href="halls.html">OUR HALLS</a></li>
-                <li><a href="food.html">FOOD & DRINKS</a></li>
-                <li><a href="cart.html">CART</a></li>
-                <li><a href="team.html">OUR TEAM</a></li>
-            </ul>
+        <button id="menu-toggle" type="button" 
+                aria-label="Toggle menu"
+                aria-controls="sidebar"
+                aria-expanded="false">
+            <span class="hamburger"></span>
+        </button>
 
-            <div class="yellowbox signup">
-                <a href="contact.html">SIGN UP</a>
-            </div> 
-
-        </nav>
+        <a href="contact.html" class="signupbox signup">
+            SIGN UP
+        </a>
     </header>
+
+    <!--menu navigation-->
+    <nav class="sidebar" id="sidebar">
+        <ul>
+            <li><a href="home.html">HOME</a></li>
+            <li><a href="movies.html">MOVIES</a></li>
+            <li><a href="halls.html">OUR HALLS</a></li> 
+            <li><a href="food.html">FOOD & DRINKS</a></li>
+            <li><a href="cart.html">CART</a></li>
+            <li><a href="team.html">OUR TEAM</a></li>
+        </ul> 
+    </nav>
     
+    <!--navigation bar-->
+     <nav class="navbar">
+        <ul>
+            <li><a href="home.html">HOME</a></li>
+            <li><a href="movies.html">MOVIES</a></li>
+            <li><a href="halls.html">OUR HALLS</a></li> 
+            <li><a href="food.html">FOOD & DRINKS</a></li>
+        </ul> 
+    </nav>
+
+     <hr>
+
     <main>
         <section>
-            <div class="box">
-                <img src="tiger.jpg" height="180px" width="200">
-            </div>
             <p class="yellow">THE CINEMA EXPERIENCE</p> 
             <p class="tagline"><strong>Every Story Deserve a<br>Big Screen.</strong></p>
+             <div class="box">
+                <img src="tiger.jpg" height="180px" width="200">
+            </div>
             <p class="grey">Premium halls, recliner seats and the latest blockbusters. 
-                <br>Book your night in minutes.</p>
+                Book your night in minutes.</p>
+            
+            <div class="button">
+                <div class="yellow-box">
+                    <a href="contact.html">Explore Movies</a>
+                </div> 
 
-            <div class="yellowbox button">
-                <a href="contact.html">Explore Movies</a>
-            </div> 
-
-            <div class="transparent-box">
-                <a href="contact.html">View Halls</a>
-            </div> 
-
+                <div class="transparent-box">
+                    <a href="contact.html">View Halls</a>
+                </div> 
+            </div>
         </section>
 
 
@@ -51,12 +72,14 @@
     
     <footer>
         <div class="footer-links">
+        <ul>
             <li><a href="home.html">HOME</a></li>
             <li><a href="movies.html">MOVIES</a></li>
             <li><a href="halls.html">OUR HALLS</a></li>
             <li><a href="food.html">FOOD & DRINKS</a></li>
             <li><a href="cart.html">CART</a></li>
             <li><a href="team.html">OUR TEAM</a></li>
+        </ul>
         </div>
 
         <div class="footer-location">
@@ -98,4 +121,8 @@
         </p>
     </footer>
 
+<<<<<<< HEAD
     <script src="main.js"></script>
+=======
+
+>>>>>>> e8ccdd4953aae2062fa8ff4cd19c4aada9b5ef60
