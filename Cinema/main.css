@@ -4,11 +4,11 @@ body{
 
 nav{
     height:70px; display:flex; justify-content:center; align-items:center;
-    border-bottom:0.5px solid rgba(253, 252, 252, 0.252); 
+    border-bottom:0.5px solid rgba(253, 252, 252, 0.252);
     background-image: url("Images/Logo and Icon/dark_logo.svg"); 
     background-repeat:no-repeat;
     background-position: left -5px; background-size: 250px auto; padding-left:500px;
-    font-family: Arial;
+    font-family: Arial; 
     }
             
 nav ul {
@@ -68,6 +68,7 @@ footer {font-family: Arial; padding:15px 20px; background-image: url("Images/Log
     gap: 30px;
     align-items: start;
     box-sizing: border-box;
+    clear:both;
 }
 
 .footer-links {grid-column:2; display:grid; grid-template-columns: repeat(2, max-content);
